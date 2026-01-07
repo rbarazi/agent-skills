@@ -1,0 +1,217 @@
+{
+  "$schema": "https://skills.anthropic.com/schemas/marketplace/v1.json",
+  "name": "Agentify Skills",
+  "description": "Production-ready Claude Code skills extracted from Agentify. Patterns for Rails authentication, multi-tenant SaaS, LLM integration, MCP servers, and Slack/ChatKit channels.",
+  "repository": "https://github.com/rbarazi/agent-skills",
+  "license": "MIT",
+  "version": "1.0.0",
+  "categories": [
+    {
+      "id": "authentication",
+      "name": "Authentication & Authorization",
+      "description": "Identity management, sessions, OAuth, and password recovery"
+    },
+    {
+      "id": "multi-tenant",
+      "name": "Multi-Tenant Architecture",
+      "description": "SaaS patterns for account-based data isolation"
+    },
+    {
+      "id": "ai-infrastructure",
+      "name": "AI Infrastructure",
+      "description": "LLM clients, MCP protocol, and agent building blocks"
+    },
+    {
+      "id": "ui-widgets",
+      "name": "UI Widgets",
+      "description": "Chat interfaces and visual components for AI responses"
+    },
+    {
+      "id": "slack",
+      "name": "Slack Integration",
+      "description": "Slack as a channel for AI agents with Block Kit, MCP, and work objects"
+    },
+    {
+      "id": "testing",
+      "name": "Testing Infrastructure",
+      "description": "Test helpers and patterns for Rails applications"
+    },
+    {
+      "id": "meta",
+      "name": "Meta Skills",
+      "description": "Skills for creating and managing other skills"
+    }
+  ],
+  "skills": [
+    {
+      "id": "rails8-authentication",
+      "name": "Rails 8 Authentication",
+      "description": "Implement Rails 8 built-in authentication with has_secure_password, session cookies, and the Authentication concern. Use when building login/logout functionality, session-based auth, or user authentication systems in Rails 8+ applications.",
+      "path": "skills/rails8-authentication",
+      "category": "authentication",
+      "tags": ["rails", "authentication", "session", "bcrypt", "rails8"],
+      "version": "1.0.0",
+      "compatibility": "Rails 8+, Ruby 3.2+"
+    },
+    {
+      "id": "oauth21-provider",
+      "name": "OAuth 2.1 Provider",
+      "description": "Implement an RFC-compliant OAuth 2.1 authorization server in Rails applications. Use when building apps that need to authorize third-party clients (like MCP clients, API consumers, or external integrations) using industry-standard OAuth flows with PKCE, dynamic client registration, and token management.",
+      "path": "skills/oauth21-provider",
+      "category": "authentication",
+      "tags": ["oauth", "oauth2", "pkce", "authorization", "rfc", "api"],
+      "version": "1.0.0",
+      "compatibility": "Rails 7+, Ruby 3.2+, PostgreSQL"
+    },
+    {
+      "id": "password-reset-flow",
+      "name": "Password Reset Flow",
+      "description": "Implement secure password reset with Rails 8's built-in token generation. Use when building 'forgot password' functionality with email verification and time-limited reset tokens.",
+      "path": "skills/password-reset-flow",
+      "category": "authentication",
+      "tags": ["password", "reset", "email", "token", "security", "rails8"],
+      "version": "1.0.0",
+      "compatibility": "Rails 8+, Ruby 3.2+"
+    },
+    {
+      "id": "session-management",
+      "name": "Session Management",
+      "description": "Implement database-backed session management with cookie handling, audit trails, and multiple device support. Use when building authentication systems that need session tracking, device management, or security audit capabilities.",
+      "path": "skills/session-management",
+      "category": "authentication",
+      "tags": ["session", "cookies", "audit", "multi-device", "security"],
+      "version": "1.0.0",
+      "compatibility": "Rails 7+, Ruby 3.2+"
+    },
+    {
+      "id": "multi-tenant-accounts",
+      "name": "Multi-Tenant Accounts",
+      "description": "Implement multi-tenant architecture using an Account model as the tenant boundary. Use when building SaaS applications, team-based apps, or any system where data must be isolated between organizations/accounts.",
+      "path": "skills/multi-tenant-accounts",
+      "category": "multi-tenant",
+      "tags": ["saas", "multi-tenant", "account", "isolation", "organization"],
+      "version": "1.0.0",
+      "compatibility": "Rails 7+, Ruby 3.2+"
+    },
+    {
+      "id": "user-management",
+      "name": "User Management",
+      "description": "Implement user CRUD operations within an account with permission controls and feature flags. Use when building team member management, user administration, or account user settings in multi-tenant Rails applications.",
+      "path": "skills/user-management",
+      "category": "multi-tenant",
+      "tags": ["users", "crud", "permissions", "team", "admin"],
+      "version": "1.0.0",
+      "compatibility": "Rails 7+, Ruby 3.2+"
+    },
+    {
+      "id": "llm-gateway",
+      "name": "LLM Gateway",
+      "description": "Build a multi-provider LLM client abstraction layer for Rails applications. Use when integrating multiple LLM providers (OpenAI, Anthropic, Gemini, Ollama), implementing provider switching, feature-based model routing, or standardizing LLM responses across providers.",
+      "path": "skills/llm-gateway",
+      "category": "ai-infrastructure",
+      "tags": ["llm", "openai", "anthropic", "gemini", "ollama", "ai", "gateway"],
+      "version": "1.0.0",
+      "compatibility": "Rails 7+, Ruby 3.2+, Faraday"
+    },
+    {
+      "id": "mcp-rails",
+      "name": "MCP Rails",
+      "description": "Implement Model Context Protocol (MCP) in Rails applications. Use when building AI agents that need to connect to MCP servers, expose Rails apps as MCP servers, or manage MCP subprocess containers via Docker. Covers JSON-RPC transport, OAuth 2.1 PKCE authentication, SSE streaming, and multi-worker process coordination.",
+      "path": "skills/mcp-rails",
+      "category": "ai-infrastructure",
+      "tags": ["mcp", "model-context-protocol", "json-rpc", "sse", "docker", "agents"],
+      "version": "1.0.0",
+      "compatibility": "Rails 7+, Ruby 3.2+, PostgreSQL, Docker (optional)"
+    },
+    {
+      "id": "chatkit-frontend-bootstrap",
+      "name": "ChatKit Frontend Bootstrap",
+      "description": "Embed and initialize OpenAI's ChatKit widget in Rails views. Use when adding ChatKit to a page, configuring the openai-chatkit custom element via data attributes, syncing themes with dark/light mode, handling Turbo navigation, or setting up attachment uploads.",
+      "path": "skills/chatkit-frontend-bootstrap",
+      "category": "ui-widgets",
+      "tags": ["chatkit", "openai", "widget", "frontend", "turbo", "theme"],
+      "version": "1.0.0",
+      "compatibility": "Rails 7+, Turbo, Stimulus"
+    },
+    {
+      "id": "chatkit-rails-backend",
+      "name": "ChatKit Rails Backend",
+      "description": "Integrate OpenAI ChatKit with a Rails backend using SSE streaming. Use when building conversational AI with thread management, message streaming, widget rendering from MCP tool results, file attachments, and human-in-the-loop form interactions.",
+      "path": "skills/chatkit-rails-backend",
+      "category": "ui-widgets",
+      "tags": ["chatkit", "openai", "sse", "streaming", "threads", "backend"],
+      "version": "1.0.0",
+      "compatibility": "Rails 7+, Ruby 3.2+"
+    },
+    {
+      "id": "mcp-widget-authoring",
+      "name": "MCP Widget Authoring",
+      "description": "Create ChatKit UI widgets in MCP servers. Use when building visual components that render in ChatKit from tool results. Covers widget templates with JSON Schema validation, WidgetTemplateService for hydration, BaseMCPServer patterns, and multi-channel support for Slack.",
+      "path": "skills/mcp-widget-authoring",
+      "category": "ui-widgets",
+      "tags": ["mcp", "widget", "chatkit", "templates", "json-schema"],
+      "version": "1.0.0",
+      "compatibility": "Rails 7+, Ruby 3.2+"
+    },
+    {
+      "id": "slack-channel-integration",
+      "name": "Slack Channel Integration",
+      "description": "Build Slack as a communication channel for AI agents. Use when implementing Slack OAuth, webhooks, event processing, or creating agent-to-Slack messaging pipelines.",
+      "path": "skills/slack-channel-integration",
+      "category": "slack",
+      "tags": ["slack", "oauth", "webhooks", "bot", "channel", "events"],
+      "version": "1.0.0",
+      "compatibility": "Rails 7+, Ruby 3.2+"
+    },
+    {
+      "id": "slack-blockkit-ui",
+      "name": "Slack Block Kit UI",
+      "description": "Render rich Block Kit messages in Slack from AI agent tool results. Use when building agents that display formatted responses with sections, images, and buttons.",
+      "path": "skills/slack-blockkit-ui",
+      "category": "slack",
+      "tags": ["slack", "block-kit", "ui", "messages", "formatting"],
+      "version": "1.0.0",
+      "compatibility": "Rails 7+, Ruby 3.2+"
+    },
+    {
+      "id": "slack-mcp-server",
+      "name": "Slack MCP Server",
+      "description": "Create MCP servers that interact with Slack APIs. Use when building agent tools for Slack canvases, posting messages, or other Slack operations via Model Context Protocol.",
+      "path": "skills/slack-mcp-server",
+      "category": "slack",
+      "tags": ["slack", "mcp", "api", "canvases", "tools"],
+      "version": "1.0.0",
+      "compatibility": "Rails 7+, Ruby 3.2+"
+    },
+    {
+      "id": "slack-work-objects",
+      "name": "Slack Work Objects",
+      "description": "Create trackable Work Objects in Slack with link unfurling and flexpane details. Use when building agents that need persistent, interactive entities.",
+      "path": "skills/slack-work-objects",
+      "category": "slack",
+      "tags": ["slack", "work-objects", "unfurling", "flexpane", "entities"],
+      "version": "1.0.0",
+      "compatibility": "Rails 7+, Ruby 3.2+"
+    },
+    {
+      "id": "test-auth-helpers",
+      "name": "Test Auth Helpers",
+      "description": "Implement authentication testing patterns with RSpec, FactoryBot, and test helpers for Rails applications. Use when writing controller specs, system tests, or request specs that require authenticated users and multi-tenant account context.",
+      "path": "skills/test-auth-helpers",
+      "category": "testing",
+      "tags": ["testing", "rspec", "factorybot", "authentication", "helpers"],
+      "version": "1.0.0",
+      "compatibility": "Rails 7+, RSpec, FactoryBot"
+    },
+    {
+      "id": "code-pattern-extraction",
+      "name": "Code Pattern Extraction",
+      "description": "Extract reusable design and implementation patterns from codebases into Skills. Use when asked to analyze code for patterns, document architectural decisions, create transferrable implementation guides, or extract knowledge into Skills.",
+      "path": "skills/code-pattern-extraction",
+      "category": "meta",
+      "tags": ["patterns", "skills", "extraction", "documentation", "architecture"],
+      "version": "1.0.0",
+      "compatibility": "Any codebase"
+    }
+  ]
+}
