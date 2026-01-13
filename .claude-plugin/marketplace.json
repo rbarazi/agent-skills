@@ -1,0 +1,13 @@
+{
+  "name": "agentify-skills",
+  "owner": {
+    "name": "Ridha Barazi"
+  },
+  "plugins": [
+    {
+      "name": "agentify-skills",
+      "source": ".",
+      "description": "Production-ready Claude Code skills for Rails: authentication, multi-tenant SaaS, LLM integration, MCP servers, and Slack/ChatKit channels."
+    }
+  ]
+}

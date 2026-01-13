@@ -1,0 +1,11 @@
+{
+  "name": "agentify-skills",
+  "description": "Production-ready Claude Code skills extracted from Agentify. Patterns for Rails authentication, multi-tenant SaaS, LLM integration, MCP servers, and Slack/ChatKit channels.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Ridha Barazi"
+  },
+  "repository": "https://github.com/rbarazi/agent-skills",
+  "skills": "skills"
+}

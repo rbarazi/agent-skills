@@ -8,17 +8,21 @@ Production-ready Claude Code skills extracted from [Agentify](https://github.com
 
 ```bash
 # In Claude Code
-/plugin marketplace add your-org/agent-skills
+/plugin marketplace add rbarazi/agent-skills
 ```
 
-### Install Individual Skills
+### Install the Plugin
 
 ```bash
-# Install a single skill
-/plugin install rails8-authentication
+# Install all skills from this plugin
+/plugin install agentify-skills@rbarazi-agent-skills
+```
 
-# Install from this marketplace specifically
-/plugin install mcp-rails@your-org/agent-skills
+### Local Development
+
+```bash
+# Add marketplace from local path
+/plugin marketplace add /path/to/agent-skills
 ```
 
 ### Manual Installation
