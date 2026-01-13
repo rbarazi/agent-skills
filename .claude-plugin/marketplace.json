@@ -1,123 +1,150 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "agentify-skills",
+  "description": "Production-ready Claude Code skills for Rails authentication, multi-tenant SaaS, AI infrastructure, and communication channels. Extracted from Agentify.",
   "owner": {
-    "name": "Ridha Barazi"
+    "name": "Ridha Barazi",
+    "email": "1444+rbarazi@users.noreply.github.com"
   },
   "plugins": [
     {
       "name": "agentify-skills",
+      "description": "All 17 skills: authentication, multi-tenant, AI infrastructure, ChatKit, Slack",
       "source": { "source": "github", "repo": "rbarazi/agent-skills" },
-      "description": "All 17 skills: authentication, multi-tenant, AI infrastructure, ChatKit, Slack"
+      "category": "development",
+      "homepage": "https://github.com/rbarazi/agent-skills"
     },
     {
       "name": "auth-bundle",
+      "description": "Authentication suite: Rails 8 auth, OAuth 2.1, password reset, sessions",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "bundles/auth-bundle" },
-      "description": "Authentication suite: Rails 8 auth, OAuth 2.1, password reset, sessions"
+      "category": "security"
     },
     {
       "name": "multi-tenant-bundle",
+      "description": "Multi-tenant SaaS: account isolation and user management",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "bundles/multi-tenant-bundle" },
-      "description": "Multi-tenant SaaS: account isolation and user management"
+      "category": "development"
     },
     {
       "name": "ai-bundle",
+      "description": "AI infrastructure: LLM gateway and MCP protocol",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "bundles/ai-bundle" },
-      "description": "AI infrastructure: LLM gateway and MCP protocol"
+      "category": "development"
     },
     {
       "name": "chatkit-bundle",
+      "description": "ChatKit integration: frontend, backend, MCP widgets",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "bundles/chatkit-bundle" },
-      "description": "ChatKit integration: frontend, backend, MCP widgets"
+      "category": "productivity"
     },
     {
       "name": "slack-bundle",
+      "description": "Slack integration: channel, Block Kit, MCP server, Work Objects",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "bundles/slack-bundle" },
-      "description": "Slack integration: channel, Block Kit, MCP server, Work Objects"
+      "category": "productivity"
     },
     {
       "name": "rails8-authentication",
+      "description": "Rails 8 built-in auth with has_secure_password",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/rails8-authentication" },
-      "description": "Rails 8 built-in auth with has_secure_password"
+      "category": "security"
     },
     {
       "name": "oauth21-provider",
+      "description": "RFC-compliant OAuth 2.1 authorization server",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/oauth21-provider" },
-      "description": "RFC-compliant OAuth 2.1 authorization server"
+      "category": "security"
     },
     {
       "name": "password-reset-flow",
+      "description": "Secure password reset with Rails 8 tokens",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/password-reset-flow" },
-      "description": "Secure password reset with Rails 8 tokens"
+      "category": "security"
     },
     {
       "name": "session-management",
+      "description": "Database-backed sessions with audit trails",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/session-management" },
-      "description": "Database-backed sessions with audit trails"
+      "category": "security"
     },
     {
       "name": "multi-tenant-accounts",
+      "description": "Account-based multi-tenancy for SaaS",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/multi-tenant-accounts" },
-      "description": "Account-based multi-tenancy for SaaS"
+      "category": "development"
     },
     {
       "name": "user-management",
+      "description": "User CRUD with permissions in multi-tenant context",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/user-management" },
-      "description": "User CRUD with permissions in multi-tenant context"
+      "category": "development"
     },
     {
       "name": "llm-gateway",
+      "description": "Multi-provider LLM abstraction layer",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/llm-gateway" },
-      "description": "Multi-provider LLM abstraction layer"
+      "category": "development"
     },
     {
       "name": "mcp-rails",
+      "description": "Complete MCP implementation for Rails",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/mcp-rails" },
-      "description": "Complete MCP implementation for Rails"
+      "category": "development"
     },
     {
       "name": "chatkit-frontend-bootstrap",
+      "description": "Embed OpenAI ChatKit widget",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/chatkit-frontend-bootstrap" },
-      "description": "Embed OpenAI ChatKit widget"
+      "category": "productivity"
     },
     {
       "name": "chatkit-rails-backend",
+      "description": "SSE streaming backend for ChatKit",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/chatkit-rails-backend" },
-      "description": "SSE streaming backend for ChatKit"
+      "category": "productivity"
     },
     {
       "name": "mcp-widget-authoring",
+      "description": "Create visual widgets in MCP tool responses",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/mcp-widget-authoring" },
-      "description": "Create visual widgets in MCP tool responses"
+      "category": "productivity"
     },
     {
       "name": "slack-channel-integration",
+      "description": "Slack as AI agent channel",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/slack-channel-integration" },
-      "description": "Slack as AI agent channel"
+      "category": "productivity"
     },
     {
       "name": "slack-blockkit-ui",
+      "description": "Render Block Kit messages from agent results",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/slack-blockkit-ui" },
-      "description": "Render Block Kit messages from agent results"
+      "category": "productivity"
     },
     {
       "name": "slack-mcp-server",
+      "description": "MCP servers for Slack API operations",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/slack-mcp-server" },
-      "description": "MCP servers for Slack API operations"
+      "category": "productivity"
     },
     {
       "name": "slack-work-objects",
+      "description": "Trackable Work Objects with link unfurling",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/slack-work-objects" },
-      "description": "Trackable Work Objects with link unfurling"
+      "category": "productivity"
     },
     {
       "name": "test-auth-helpers",
+      "description": "Authentication testing with RSpec and FactoryBot",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/test-auth-helpers" },
-      "description": "Authentication testing with RSpec and FactoryBot"
+      "category": "testing"
     },
     {
       "name": "code-pattern-extraction",
+      "description": "Extract reusable patterns into new Skills",
       "source": { "source": "github", "repo": "rbarazi/agent-skills", "path": "skills/code-pattern-extraction" },
-      "description": "Extract reusable patterns into new Skills"
+      "category": "development"
     }
   ]
 }

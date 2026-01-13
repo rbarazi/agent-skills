@@ -118,6 +118,23 @@ skill-name/
 └── assets/           # Templates and static files (optional)
 ```
 
+### SKILL.md Format
+
+Skills use YAML frontmatter with required fields:
+
+```yaml
+---
+name: skill-name
+description: A clear description of what this skill does and when to use it
+---
+
+# Skill Title
+
+Instructions that Claude will follow when this skill is active.
+```
+
+Optional frontmatter fields: `license`, `metadata`, `compatibility`, `allowed-tools`
+
 ## Creating New Skills
 
 Use the `code-pattern-extraction` skill to create new skills from your codebase:
@@ -156,6 +173,13 @@ git submodule add git@github.com:your-org/agent-skills.git .claude/agent-skills
 2. Create a skill following the structure in `skills/code-pattern-extraction/SKILL.md`
 3. Validate with `package_skill.py --validate-only`
 4. Submit a pull request
+
+## Resources
+
+- [Claude Code Skills Documentation](https://code.claude.com/docs/en/skills) - Official skills guide
+- [Claude Code Plugin Marketplaces](https://code.claude.com/docs/en/plugin-marketplaces) - Marketplace setup
+- [Anthropic Skills Repository](https://github.com/anthropics/skills) - Official skills and spec
+- [Agent Skills Specification](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) - Technical deep dive
 
 ## License
 
