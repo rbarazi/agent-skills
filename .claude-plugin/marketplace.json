@@ -3,7 +3,7 @@
   "name": "agentify-skills",
   "description": "Production-ready Claude Code skills for Rails authentication, multi-tenant SaaS, AI infrastructure, and communication channels. Extracted from Agentify.",
   "owner": {
-    "name": "Ridha Barazi",
+    "name": "Rida Al Barazi",
     "email": "1444+rbarazi@users.noreply.github.com"
   },
   "plugins": [
