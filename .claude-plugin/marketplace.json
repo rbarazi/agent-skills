@@ -1,18 +1,38 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "agentify-skills",
-  "description": "Production-ready Claude Code skills for Rails authentication, multi-tenant SaaS, AI infrastructure, and communication channels. Extracted from Agentify.",
   "owner": {
     "name": "Rida Al Barazi",
     "email": "1444+rbarazi@users.noreply.github.com"
+  },
+  "metadata": {
+    "description": "Production-ready Claude Code skills for Rails authentication, multi-tenant SaaS, AI infrastructure, and communication channels",
+    "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "agentify-skills",
       "description": "17 production-ready skills: Rails 8 authentication, OAuth 2.1, multi-tenant SaaS, LLM gateway, MCP protocol, ChatKit, and Slack integration",
-      "source": { "source": "github", "repo": "rbarazi/agent-skills" },
-      "category": "development",
-      "homepage": "https://github.com/rbarazi/agent-skills"
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/rails8-authentication",
+        "./skills/oauth21-provider",
+        "./skills/password-reset-flow",
+        "./skills/session-management",
+        "./skills/multi-tenant-accounts",
+        "./skills/user-management",
+        "./skills/llm-gateway",
+        "./skills/mcp-rails",
+        "./skills/chatkit-frontend-bootstrap",
+        "./skills/chatkit-rails-backend",
+        "./skills/mcp-widget-authoring",
+        "./skills/slack-channel-integration",
+        "./skills/slack-blockkit-ui",
+        "./skills/slack-mcp-server",
+        "./skills/slack-work-objects",
+        "./skills/test-auth-helpers",
+        "./skills/code-pattern-extraction"
+      ]
     }
   ]
 }
