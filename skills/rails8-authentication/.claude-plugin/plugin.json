@@ -1,5 +1,0 @@
-{
-  "name": "rails8-authentication",
-  "description": "Rails 8 built-in auth with has_secure_password, session cookies, and Authentication concern",
-  "version": "1.0.0"
-}

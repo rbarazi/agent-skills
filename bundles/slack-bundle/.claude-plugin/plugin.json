@@ -1,5 +1,0 @@
-{
-  "name": "slack-bundle",
-  "description": "Complete Slack integration: channel setup, Block Kit UI, MCP server, and Work Objects",
-  "version": "1.0.0"
-}

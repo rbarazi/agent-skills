@@ -1,5 +1,0 @@
-{
-  "name": "slack-channel-integration",
-  "description": "Slack as AI agent channel: OAuth, webhooks, event processing",
-  "version": "1.0.0"
-}

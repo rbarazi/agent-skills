@@ -1,5 +1,0 @@
-{
-  "name": "mcp-rails",
-  "description": "Complete MCP implementation: client, server, Docker subprocess management, OAuth integration",
-  "version": "1.0.0"
-}

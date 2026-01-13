@@ -1,5 +1,0 @@
-{
-  "name": "session-management",
-  "description": "Database-backed sessions with audit trails and multi-device support",
-  "version": "1.0.0"
-}

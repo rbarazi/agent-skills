@@ -1,5 +1,0 @@
-{
-  "name": "auth-bundle",
-  "description": "Complete authentication suite: Rails 8 auth, OAuth 2.1, password reset, and session management",
-  "version": "1.0.0"
-}

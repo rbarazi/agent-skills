@@ -1,5 +1,0 @@
-{
-  "name": "slack-mcp-server",
-  "description": "MCP servers for Slack API operations (canvases, messages)",
-  "version": "1.0.0"
-}
