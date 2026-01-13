@@ -1,0 +1,10 @@
+{
+  "name": "chatkit-bundle",
+  "description": "ChatKit integration: frontend widget, Rails backend, and MCP widgets",
+  "version": "1.0.0",
+  "skills": [
+    { "name": "chatkit-frontend-bootstrap", "path": "../../skills/chatkit-frontend-bootstrap" },
+    { "name": "chatkit-rails-backend", "path": "../../skills/chatkit-rails-backend" },
+    { "name": "mcp-widget-authoring", "path": "../../skills/mcp-widget-authoring" }
+  ]
+}

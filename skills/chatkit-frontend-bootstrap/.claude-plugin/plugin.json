@@ -1,0 +1,6 @@
+{
+  "name": "chatkit-frontend-bootstrap",
+  "description": "Embed OpenAI ChatKit widget with Turbo navigation and theme sync",
+  "version": "1.0.0",
+  "skills": [{ "name": "chatkit-frontend-bootstrap", "path": ".." }]
+}

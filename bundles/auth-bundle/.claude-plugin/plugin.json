@@ -1,0 +1,11 @@
+{
+  "name": "auth-bundle",
+  "description": "Complete authentication suite: Rails 8 auth, OAuth 2.1, password reset, and session management",
+  "version": "1.0.0",
+  "skills": [
+    { "name": "rails8-authentication", "path": "../../skills/rails8-authentication" },
+    { "name": "oauth21-provider", "path": "../../skills/oauth21-provider" },
+    { "name": "password-reset-flow", "path": "../../skills/password-reset-flow" },
+    { "name": "session-management", "path": "../../skills/session-management" }
+  ]
+}

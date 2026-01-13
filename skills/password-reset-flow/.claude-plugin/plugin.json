@@ -1,0 +1,6 @@
+{
+  "name": "password-reset-flow",
+  "description": "Secure password reset with Rails 8 built-in token generation",
+  "version": "1.0.0",
+  "skills": [{ "name": "password-reset-flow", "path": ".." }]
+}

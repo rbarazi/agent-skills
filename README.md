@@ -11,18 +11,28 @@ Production-ready Claude Code skills extracted from [Agentify](https://github.com
 /plugin marketplace add rbarazi/agent-skills
 ```
 
-### Install the Plugin
+### Install Options
 
+**All skills at once:**
 ```bash
-# Install all skills from this plugin
-/plugin install agentify-skills@rbarazi-agent-skills
+/plugin install agentify-skills@agentify-skills
 ```
 
-### Local Development
-
+**Install a bundle:**
 ```bash
-# Add marketplace from local path
-/plugin marketplace add /path/to/agent-skills
+/plugin install auth-bundle@agentify-skills        # Rails 8 auth, OAuth 2.1, password reset, sessions
+/plugin install multi-tenant-bundle@agentify-skills # Account isolation, user management
+/plugin install ai-bundle@agentify-skills          # LLM gateway, MCP protocol
+/plugin install chatkit-bundle@agentify-skills     # ChatKit frontend, backend, MCP widgets
+/plugin install slack-bundle@agentify-skills       # Slack channel, Block Kit, MCP server, Work Objects
+```
+
+**Install individual skills:**
+```bash
+/plugin install rails8-authentication@agentify-skills
+/plugin install llm-gateway@agentify-skills
+/plugin install mcp-rails@agentify-skills
+# ... any skill from the catalog below
 ```
 
 ### Manual Installation

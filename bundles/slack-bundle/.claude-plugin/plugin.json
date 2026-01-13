@@ -1,0 +1,11 @@
+{
+  "name": "slack-bundle",
+  "description": "Complete Slack integration: channel setup, Block Kit UI, MCP server, and Work Objects",
+  "version": "1.0.0",
+  "skills": [
+    { "name": "slack-channel-integration", "path": "../../skills/slack-channel-integration" },
+    { "name": "slack-blockkit-ui", "path": "../../skills/slack-blockkit-ui" },
+    { "name": "slack-mcp-server", "path": "../../skills/slack-mcp-server" },
+    { "name": "slack-work-objects", "path": "../../skills/slack-work-objects" }
+  ]
+}

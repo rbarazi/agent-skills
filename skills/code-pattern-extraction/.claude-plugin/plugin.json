@@ -1,0 +1,6 @@
+{
+  "name": "code-pattern-extraction",
+  "description": "Extract reusable patterns from codebases into new Skills",
+  "version": "1.0.0",
+  "skills": [{ "name": "code-pattern-extraction", "path": ".." }]
+}
