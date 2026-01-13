@@ -7,5 +7,23 @@
     "name": "Ridha Barazi"
   },
   "repository": "https://github.com/rbarazi/agent-skills",
-  "skills": "skills"
+  "skills": [
+    { "name": "chatkit-frontend-bootstrap", "path": "skills/chatkit-frontend-bootstrap" },
+    { "name": "chatkit-rails-backend", "path": "skills/chatkit-rails-backend" },
+    { "name": "code-pattern-extraction", "path": "skills/code-pattern-extraction" },
+    { "name": "llm-gateway", "path": "skills/llm-gateway" },
+    { "name": "mcp-rails", "path": "skills/mcp-rails" },
+    { "name": "mcp-widget-authoring", "path": "skills/mcp-widget-authoring" },
+    { "name": "multi-tenant-accounts", "path": "skills/multi-tenant-accounts" },
+    { "name": "oauth21-provider", "path": "skills/oauth21-provider" },
+    { "name": "password-reset-flow", "path": "skills/password-reset-flow" },
+    { "name": "rails8-authentication", "path": "skills/rails8-authentication" },
+    { "name": "session-management", "path": "skills/session-management" },
+    { "name": "slack-blockkit-ui", "path": "skills/slack-blockkit-ui" },
+    { "name": "slack-channel-integration", "path": "skills/slack-channel-integration" },
+    { "name": "slack-mcp-server", "path": "skills/slack-mcp-server" },
+    { "name": "slack-work-objects", "path": "skills/slack-work-objects" },
+    { "name": "test-auth-helpers", "path": "skills/test-auth-helpers" },
+    { "name": "user-management", "path": "skills/user-management" }
+  ]
 }
