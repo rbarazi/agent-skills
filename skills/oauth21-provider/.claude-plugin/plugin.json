@@ -1,6 +1,5 @@
 {
   "name": "oauth21-provider",
   "description": "RFC-compliant OAuth 2.1 authorization server with PKCE and dynamic client registration",
-  "version": "1.0.0",
-  "skills": [{ "name": "oauth21-provider", "path": ".." }]
+  "version": "1.0.0"
 }

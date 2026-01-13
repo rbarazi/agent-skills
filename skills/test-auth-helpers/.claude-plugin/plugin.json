@@ -1,6 +1,5 @@
 {
   "name": "test-auth-helpers",
   "description": "Authentication testing patterns with RSpec and FactoryBot",
-  "version": "1.0.0",
-  "skills": [{ "name": "test-auth-helpers", "path": ".." }]
+  "version": "1.0.0"
 }

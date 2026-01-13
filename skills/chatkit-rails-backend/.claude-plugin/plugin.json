@@ -1,6 +1,5 @@
 {
   "name": "chatkit-rails-backend",
   "description": "SSE streaming backend for ChatKit with thread management and attachments",
-  "version": "1.0.0",
-  "skills": [{ "name": "chatkit-rails-backend", "path": ".." }]
+  "version": "1.0.0"
 }

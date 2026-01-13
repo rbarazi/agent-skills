@@ -1,9 +1,5 @@
 {
   "name": "ai-bundle",
   "description": "AI infrastructure: LLM gateway and MCP protocol implementation",
-  "version": "1.0.0",
-  "skills": [
-    { "name": "llm-gateway", "path": "../../skills/llm-gateway" },
-    { "name": "mcp-rails", "path": "../../skills/mcp-rails" }
-  ]
+  "version": "1.0.0"
 }

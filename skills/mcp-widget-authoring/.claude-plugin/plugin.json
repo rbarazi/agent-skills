@@ -1,6 +1,5 @@
 {
   "name": "mcp-widget-authoring",
   "description": "Create visual widgets in MCP tool responses with JSON Schema validation",
-  "version": "1.0.0",
-  "skills": [{ "name": "mcp-widget-authoring", "path": ".." }]
+  "version": "1.0.0"
 }

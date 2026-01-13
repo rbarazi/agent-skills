@@ -1,6 +1,5 @@
 {
   "name": "session-management",
   "description": "Database-backed sessions with audit trails and multi-device support",
-  "version": "1.0.0",
-  "skills": [{ "name": "session-management", "path": ".." }]
+  "version": "1.0.0"
 }

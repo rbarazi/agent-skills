@@ -1,6 +1,5 @@
 {
   "name": "llm-gateway",
   "description": "Multi-provider LLM abstraction (OpenAI, Anthropic, Gemini, Ollama) with feature detection and cost tracking",
-  "version": "1.0.0",
-  "skills": [{ "name": "llm-gateway", "path": ".." }]
+  "version": "1.0.0"
 }

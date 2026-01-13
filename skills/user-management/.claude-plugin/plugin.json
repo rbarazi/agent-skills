@@ -1,6 +1,5 @@
 {
   "name": "user-management",
   "description": "User CRUD with permissions and feature flags in multi-tenant context",
-  "version": "1.0.0",
-  "skills": [{ "name": "user-management", "path": ".." }]
+  "version": "1.0.0"
 }
