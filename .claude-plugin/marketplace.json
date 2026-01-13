@@ -6,7 +6,10 @@
   "plugins": [
     {
       "name": "agentify-skills",
-      "source": ".",
+      "source": {
+        "source": "github",
+        "repo": "rbarazi/agent-skills"
+      },
       "description": "Production-ready Claude Code skills for Rails: authentication, multi-tenant SaaS, LLM integration, MCP servers, and Slack/ChatKit channels."
     }
   ]
